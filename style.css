@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/* Timeline Styles */
+.timeline {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline ul {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline li {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline .year {
+    position: absolute;
+    left: -50px;
+    top: 0;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.timeline .event {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .timeline {
+        padding: 1rem;
+    }
+
+    .timeline .year {
+        left: -30px;
+    }
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Efeito de hover */
+  .button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Efeito de foco */
+  .button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .more-info {
+    display: none; /* Ocultar as informações inicialmente */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 800px; /* Limita a largura máxima do container */
+    margin: 0 auto; /* Centraliza o container na página */
+}
+
+.texto {
+    flex: 1; /* Permite que o texto cresça automaticamente */
+}
+
+img {
+    flex: 0 0 auto; /* Permite que a imagem cresça automaticamente */
+    max-width: 30%; /* Limita a largura máxima da imagem */
+    margin: 0 20px 0 0; /* Espaço ao redor da imagem */
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Muda para layout em coluna em telas menores */
+    }
+
+    img {
+        margin-top: 20px; /* Espaço entre imagem e texto em layout em coluna */
+        size: 20px;
+    }
+}
